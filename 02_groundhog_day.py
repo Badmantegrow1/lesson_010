@@ -67,8 +67,9 @@ def one_day():
         except SuicideError as exc:
             print(f'Поймано исключение {exc}')
         else:
-            enlightenment_carma_level += 7
-            print(dice)
+            if dice > 6:
+                enlightenment_carma_level += 7
+                print(dice)
 
 
 one_day()
