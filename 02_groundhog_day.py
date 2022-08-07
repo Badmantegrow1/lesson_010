@@ -28,8 +28,10 @@ class SuicideError(Exception):
 
 def one_day():
     enlightenment_carma_level = 0
+
     with open('karma.log', 'w'):
         pass
+
     while enlightenment_carma_level < 777:
         dice = random.randint(1, 13)
         with open('karma.log', 'a+', encoding='utf-8') as karma:
